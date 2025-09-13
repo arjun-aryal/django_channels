@@ -20,6 +20,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
 
     async def receive(self, text_data):
         # print("Recieved Data")
+        print(text_data)
         data_json = json.loads(text_data)
         # print(data_json)
 
